@@ -1,1 +1,33 @@
+body {
+  background-color: beige;
+}
 
+.results-list {
+  max-width: 800px;
+  margin: 5em auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 2em;
+
+  li {
+    background-color: white;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 1em;
+    list-style: none;
+
+    h3 {
+      text-transform: capitalize;
+    }
+
+    p {
+      text-transform: uppercase;
+      color: gray;
+    }
+  }
+}
