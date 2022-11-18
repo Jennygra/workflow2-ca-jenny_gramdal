@@ -15,7 +15,6 @@ import { orderBy } from "lodash";
           data {
             id
             title
-            body
           }
         }
       }
@@ -26,10 +25,11 @@ import { orderBy } from "lodash";
 
 function myFunction(json) {
   const posts = json.data.posts.data;
-  const sortedPosts = orderBy(posts, [json.id], ["desc"]);
+  const postId = posts.map((s) => s.id);
+  const sortedPosts = orderBy(posts, [postId], ["desc"]);
 
   for (let i = 0; i < sortedPosts.length; i++) {
-    if (i === 10) {
+    if (i === 9) {
       break;
     }
 
