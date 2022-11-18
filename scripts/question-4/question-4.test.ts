@@ -3,6 +3,7 @@ import { ShoppingCart } from "./question-4";
 
 const myCart = new ShoppingCart();
 
+/* The tests are commented out, for testing please remove that */
 /* test 1 */
 myCart.addToCart(bread);
 
@@ -23,25 +24,24 @@ describe("Adding 1 item to the cart, then check if the returning values is corre
 });
 
 /* test 2 */
-const cartTwo = new ShoppingCart();
-myCart.addToCart(tomato);
-myCart.addToCart(cheese);
+// myCart.addToCart(tomato);
+// myCart.addToCart(cheese);
 
-describe("Adding 2 item to the cart, then check if the returning values is correct", () => {
-  test("Total cost", () => {
-    expect(cartTwo.getCostTotal()).toBe(9.45);
-  });
+// describe("Adding 2 item to the cart, then check if the returning values is correct", () => {
+//   test("Total cost", () => {
+//     expect(myCart.getCostTotal()).toBe(9.45);
+//   });
 
-  test("Number of items in cart", () => {
-    expect(cartTwo.getNumberOfItems()).toEqual(cartTwo.cart.length);
-  });
+//   test("Number of items in cart", () => {
+//     expect(myCart.getNumberOfItems()).toEqual(myCart.cart.length);
+//   });
 
-  test("Get cart", () => {
-    expect(cartTwo.getCart()).toEqual(cartTwo.cart);
-  });
+//   test("Get cart", () => {
+//     expect(myCart.getCart()).toEqual(myCart.cart);
+//   });
 
-  console.log(cartTwo);
-});
+//   console.log(myCart);
+// });
 
 /* test 3 */
 // myCart.addToCart(milk);
@@ -67,7 +67,6 @@ describe("Adding 2 item to the cart, then check if the returning values is corre
 /* test 4 */
 // myCart.addToCart(lettuce);
 // myCart.addToCart(bread);
-
 // myCart.removeFromCart(bread);
 
 // describe("Test that it can add 2 separate items, then remove one of them", () => {
