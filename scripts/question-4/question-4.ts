@@ -9,6 +9,7 @@ interface Item {
   price: number;
 }
 
+
 export class ShoppingCart {
   // Add the correct array type to cart
   cart: Array<Item> = [];
